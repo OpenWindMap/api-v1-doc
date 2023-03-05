@@ -1,8 +1,8 @@
-# Pioupiou for Developers
+# Documentation for OpenWindMap API v1
 
-Welcome to the Pioupiou developers portal.
+Welcome!
 
-From the inception, Pioupiou was built with the idea of making its data available in an open and easily reusable way.
+From the inception, the OpenWindMap network was built with the idea of making its data available in an open and easily reusable way.
 
 We believe that the value is not the data, but the innovative uses **you** will create from it.
 
@@ -15,7 +15,7 @@ We believe that the value is not the data, but the innovative uses **you** will 
 
 ## License
 
-To use data from Pioupiou stations, you must comply with the license available on the [Data Licensing] page.
+To use data from the OpenWindMap network, you must comply with the license available on the [Data Licensing] page.
 
 [Live]: api/live/index.md
 [Archive]: api/archive/index.md

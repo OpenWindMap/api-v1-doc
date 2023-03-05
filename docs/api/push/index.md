@@ -3,9 +3,9 @@
 Documentation for Push API is coming in few days...
 
 ```
-<script src="http://api.pioupiou.fr/socket.io/socket.io.js"></script>
+<script src="https://api.openwindmap.org/socket.io/socket.io.js"></script>
 <script>
-  var socket = io.connect('http://api.pioupiou.fr/v1/push');
+  var socket = io.connect('https://api.openwindmap.org/v1/push');
   
   socket.on("connect", function () {
     socket.emit("subscribe", "all");

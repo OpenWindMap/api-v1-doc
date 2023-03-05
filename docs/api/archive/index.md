@@ -11,7 +11,7 @@ To use data from Pioupiou stations, you must comply with the license available o
 
 ## Endpoint
 ```bash
-GET http://api.pioupiou.fr/v1/archive/{station_id}?start={start}&stop={stop}&format={format}
+GET https://api.openwindmap.org/v1/archive/{station_id}?start={start}&stop={stop}&format={format}
 ```
 ## Arguments
 
@@ -56,7 +56,7 @@ The **Live** API provides JSON responses.
 #### May 2015, JSON
 
 ```bash
-$ curl "http://api.pioupiou.fr/v1/archive/1?start=2015-05&stop=2015-06"
+$ curl "https://api.openwindmap.org/v1/archive/1?start=2015-05&stop=2015-06"
 ```
 ```json
 {
@@ -85,7 +85,7 @@ $ curl "http://api.pioupiou.fr/v1/archive/1?start=2015-05&stop=2015-06"
 #### Last hour, JSON
 
 ```bash
-$ curl "http://api.pioupiou.fr/v1/archive/110?start=last-hour&stop=now"
+$ curl "https://api.openwindmap.org/v1/archive/110?start=last-hour&stop=now"
 ```
 ```json
 {
@@ -114,7 +114,7 @@ $ curl "http://api.pioupiou.fr/v1/archive/110?start=last-hour&stop=now"
 #### Last hour, csv
 
 ```bash
-$ curl "http://api.pioupiou.fr/v1/archive/110?start=last-hour&stop=now&format=csv"
+$ curl "https://api.openwindmap.org/v1/archive/110?start=last-hour&stop=now&format=csv"
 ```
 ```no-highlight
 "License","http://developers.pioupiou.fr/data-licensing"
@@ -139,7 +139,7 @@ $ curl "http://api.pioupiou.fr/v1/archive/110?start=last-hour&stop=now&format=cs
 #### Last hour, tabulation-separated text
 
 ```bash
-$ curl "http://api.pioupiou.fr/v1/archive/110?start=last-hour&stop=now&format=txt"
+$ curl "https://api.openwindmap.org/v1/archive/110?start=last-hour&stop=now&format=txt"
 ```
 ```no-highlight
 License:        http://developers.pioupiou.fr/data-licensing
@@ -169,7 +169,7 @@ HTTP status code other than ```200``` means that an error has occured.
 In most cases the application will return a JSON object, including details about the error.
 
 ```bash
-$ curl -i "http://api.pioupiou.fr/v1/archive/999999?start=last-hour&stop=now"
+$ curl -i "https://api.openwindmap.org/v1/archive/999999?start=last-hour&stop=now"
 ```
 ```json
 HTTP/1.1 404 Not Found
@@ -203,7 +203,7 @@ When output format is JSON, JSONP is also supported, even if its use is no longe
 The name of the callback function must be placed in query string ```callback``` argument:
 
 ```bash
-curl -i "http://api.pioupiou.fr/v1/archive/110?start=last-hour&stop=now&callback=myCallBackFunction"
+curl -i "https://api.openwindmap.org/v1/archive/110?start=last-hour&stop=now&callback=myCallBackFunction"
 ```
 ```json
 HTTP/1.1 200 OK

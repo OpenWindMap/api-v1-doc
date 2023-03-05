@@ -8,11 +8,11 @@ To use data from Pioupiou stations, you must comply with the license available o
 ## Endpoints
 ```bash
 # latest measurements only
-GET http://api.pioupiou.fr/v1/live/{station_id}
+GET https://api.openwindmap.org/v1/live/{station_id}
 ```
 ```bash
 # latest measurements with complete metadata
-GET http://api.pioupiou.fr/v1/live-with-meta/{station_id}
+GET https://api.openwindmap.org/v1/live-with-meta/{station_id}
 ```
 ## Arguments
 ```bash
@@ -33,7 +33,7 @@ The **Live** API provides JSON responses.
 #### Single station, latest measurements only
 
 ```bash
-$ curl "http://api.pioupiou.fr/v1/live/110"
+$ curl "https://api.openwindmap.org/v1/live/110"
 ```
 ```json
 {
@@ -72,7 +72,7 @@ $ curl "http://api.pioupiou.fr/v1/live/110"
 #### Single station, latest measurements with complete metadata
 
 ```bash
-$ curl "http://api.pioupiou.fr/v1/live-with-meta/110"
+$ curl "https://api.openwindmap.org/v1/live-with-meta/110"
 ```
 ```json
 {
@@ -116,7 +116,7 @@ $ curl "http://api.pioupiou.fr/v1/live-with-meta/110"
 #### All stations, latest measurements only
 
 ```bash
-$ curl "http://api.pioupiou.fr/v1/live/all"
+$ curl "https://api.openwindmap.org/v1/live/all"
 ```
 ```json
 {
@@ -184,7 +184,7 @@ $ curl "http://api.pioupiou.fr/v1/live/all"
 #### All stations, latest measurements with complete metadata
 
 ```bash
-$ curl "http://api.pioupiou.fr/v1/live-with-meta/all"
+$ curl "https://api.openwindmap.org/v1/live-with-meta/all"
 ```
 ```json
 {
@@ -299,7 +299,7 @@ HTTP status code other than ```200``` means that an error has occured.
 In most cases the application will return a JSON object, including details about the error.
 
 ```bash
-$ curl -i "http://api.pioupiou.fr/v1/live/999999"
+$ curl -i "https://api.openwindmap.org/v1/live/999999"
 ```
 ```json
 HTTP/1.1 404 Not Found
@@ -331,7 +331,7 @@ JSONP is also supported, even if its use is no longer encouraged.
 The name of the callback function must be placed in query string ```callback``` argument:
 
 ```bash
-$ curl -i "http://api.pioupiou.fr/v1/live/1?callback=myCallBackFunction"
+$ curl -i "https://api.openwindmap.org/v1/live/1?callback=myCallBackFunction"
 ```
 ```json
 HTTP/1.1 200 OK
