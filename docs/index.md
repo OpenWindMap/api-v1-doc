@@ -1,6 +1,6 @@
-# Documentation for OpenWindMap API v1
+# OpenWindMap API v1
 
-Welcome!
+Welcome to the documentation!
 
 From the inception, the OpenWindMap network was built with the idea of making its data available in an open and easily reusable way.
 
@@ -20,5 +20,5 @@ To use data from the OpenWindMap network, you must comply with the license avail
 [Live]: api/live/index.md
 [Archive]: api/archive/index.md
 [Push]: api/push/index.md
-[Socket.IO]: http://socket.io
+[Socket.IO]: https://socket.io
 [Data Licensing]: data-licensing.md

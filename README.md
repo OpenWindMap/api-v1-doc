@@ -1,8 +1,8 @@
-# Documentation for OpenWindMap API v1
+# OpenWindMap API v1
 
 ## Introduction
 
-This repository hosts the documentation for the OpenWindMap API
+This repository hosts the documentation for the OpenWindMap API version 1
 
 ## Usage
 
